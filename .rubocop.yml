@@ -2,3 +2,18 @@ require:
   - rubocop-rake
   - rubocop-rspec
 
+# Allow emoji in comments
+Style/AsciiComments:
+  Enabled: false
+
+# Don't require documentation comment for every class
+Style/Documentation:
+  Enabled: false
+
+# Don't require frozen string magic comment
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+# Require Seattle.rb style
+Style/MethodDefParentheses:
+  EnforcedStyle: require_no_parentheses
