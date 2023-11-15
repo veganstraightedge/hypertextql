@@ -69,6 +69,7 @@ A table's schema MUST be defined in the `table`'s `thead`.
 
 All columns MUST be wrapped in `tr` tag.
 The schema row MUST be wrapped in `thead` tag.
+A table MUST have only one schema row.
 
 ```html
 <table id="users">
