@@ -164,8 +164,6 @@ A column's slug MUST be a composite of table name and column name joined by an u
 All columns MUST have a type.
 A column's type MUST be stored in the `th` tag's `data-hypertextql-type` data attribute.
 
-<!-- TODO investigate HTML attributes/tags to represent types in column headers. -->
-
 ```html
 <table id="users">
   <caption>All of our users: customers, admins, engineers...</caption>
