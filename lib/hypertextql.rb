@@ -2,7 +2,7 @@
 
 require_relative "hypertextql/version"
 
-module Hypertextql
+module HypertextQL
   class Error < StandardError; end
   # Your code goes here...
 end

@@ -4,7 +4,7 @@ require_relative "lib/hypertextql/version"
 
 Gem::Specification.new do |spec|
   spec.name = "hypertextql"
-  spec.version = Hypertextql::VERSION
+  spec.version = HypertextQL::VERSION
   spec.authors = ["Shane Becker", "Aaron Patterson"]
   spec.email = ["veganstraightedge@gmail.com"]
 
