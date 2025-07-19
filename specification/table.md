@@ -256,6 +256,24 @@ A database table schema column datatype MUST be stored in the `th` tag's `data-h
 A database table schema MUST specify one database table schema column as the _primary key_.
 A _primary key_ MUST be defined on a database table schema column `th` tag in the `class` attribute with a value of `hypertextql_primary_key`.
 
+```html
+<table class="hypertextql_table" @id="users">
+  <caption>All of our users: authors, editors, publishers, admins...</caption>
+
+  <thead>
+    <tr>
+      <th scope="col" @id="users_id"         data-hypertextql-type="integer" class="hypertextql_primary_key">id</th>
+      <th scope="col" @id="users_email"      data-hypertextql-type="string">email</th>
+      <th scope="col" @id="users_name"       data-hypertextql-type="string">name</th>
+      <th scope="col" @id="users_username"   data-hypertextql-type="string">username</th>
+      <th scope="col" @id="users_bio"        data-hypertextql-type="text">bio</th>
+      <th scope="col" @id="users_created_at" data-hypertextql-type="datetime">created_at</th>
+      <th scope="col" @id="users_updated_at" data-hypertextql-type="datetime">updated_at</th>
+    </tr>
+  </thead>
+</table>
+```
+
 #### Column datatypes
 
 A database table schema column datatype must be one of the defined [data types](datatypes.md).
@@ -275,7 +293,7 @@ The content of a database table MUST be inside of the `tbody` tag inside of the 
 
   <thead>
     <tr>
-      <th scope="col" @id="users_id"         data-hypertextql-type="integer">id</th>
+      <th scope="col" @id="users_id"         data-hypertextql-type="integer" class="hypertextql_primary_key">id</th>
       <th scope="col" @id="users_email"      data-hypertextql-type="string">email</th>
       <th scope="col" @id="users_name"       data-hypertextql-type="string">name</th>
       <th scope="col" @id="users_username"   data-hypertextql-type="string">username</th>
@@ -301,7 +319,7 @@ Each database table content row MUST be inside of a `tr` tag inside of the `tbod
 
   <thead>
     <tr>
-      <th scope="col" @id="users_id"         data-hypertextql-type="integer">id</th>
+      <th scope="col" @id="users_id"         data-hypertextql-type="integer" class="hypertextql_primary_key">id</th>
       <th scope="col" @id="users_email"      data-hypertextql-type="string">email</th>
       <th scope="col" @id="users_name"       data-hypertextql-type="string">name</th>
       <th scope="col" @id="users_username"   data-hypertextql-type="string">username</th>
@@ -332,7 +350,7 @@ For example, `users_1`, `users_2`, etc.
 
   <thead>
     <tr>
-      <th scope="col" @id="users_id"         data-hypertextql-type="integer">id</th>
+      <th scope="col" @id="users_id"         data-hypertextql-type="integer" class="hypertextql_primary_key">id</th>
       <th scope="col" @id="users_email"      data-hypertextql-type="string">email</th>
       <th scope="col" @id="users_name"       data-hypertextql-type="string">name</th>
       <th scope="col" @id="users_username"   data-hypertextql-type="string">username</th>
@@ -364,7 +382,7 @@ Each database table content row column MUST be in a `td` tag.
 
   <thead>
     <tr>
-      <th scope="col" @id="users_id"         data-hypertextql-type="integer">id</th>
+      <th scope="col" @id="users_id"         data-hypertextql-type="integer" class="hypertextql_primary_key">id</th>
       <th scope="col" @id="users_email"      data-hypertextql-type="string">email</th>
       <th scope="col" @id="users_name"       data-hypertextql-type="string">name</th>
       <th scope="col" @id="users_username"   data-hypertextql-type="string">username</th>
@@ -394,7 +412,7 @@ Each database table content row column MUST contain the same number of `td` tags
 
   <thead>
     <tr>
-      <th scope="col" @id="users_id"         data-hypertextql-type="integer">id</th>
+      <th scope="col" @id="users_id"         data-hypertextql-type="integer" class="hypertextql_primary_key">id</th>
       <th scope="col" @id="users_email"      data-hypertextql-type="string">email</th>
       <th scope="col" @id="users_name"       data-hypertextql-type="string">name</th>
       <th scope="col" @id="users_username"   data-hypertextql-type="string">username</th>
