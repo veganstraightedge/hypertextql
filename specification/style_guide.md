@@ -11,8 +11,6 @@ Underscores are used as word separators in HTML attribute values:
 ✅
 ```html
 <table class="hypertextql_table">
-```
-```html
 <td @id="users_2_id">2</td>
 ```
 
@@ -21,12 +19,10 @@ Hyphens are NOT used as separators in HTML attribute values:
 ❌
 ```html
 <table class="hypertextql-table">
-```
-```html
 <th @id="primary-key">2</td>
 ```
 
-**Rationale**: while hyphenated HTML class names are common, because they match CSS property hyphenations, the hyphen `-` is generally the subtraction operator in programming languages. If HypertextQL databases used hyphens in HTML attribute values, then HypertextQL implementation would have to transpose underscores and hyphens and back again in many places. This is a recipe for unnecessary complexity and errors.
+**Rationale:** while hyphenated HTML class names are common, because they match CSS property hyphenations, the hyphen `-` is generally the subtraction operator in programming languages. If HypertextQL databases used hyphens in HTML attribute values, then HypertextQL implementation would have to transpose underscores and hyphens and back again in many places. This is a recipe for unnecessary complexity and errors.
 
 ### Do NOT use hyphens
 
@@ -56,8 +52,6 @@ HypertextQL implementations MUST NOT ever require HypertextQL users to CamelCase
 ❌
 ```html
 <table class="HypertextqlTable">
-```
-```html
 <th @id="PrimaryKey">2</td>
 ```
 
@@ -73,3 +67,21 @@ HypertextQL implementations can require HypertextQL users to use CamelCase the u
 ```ruby
 ClownCar.find(37)
 ```
+
+## Heading use sentence case, not title case
+
+❌
+```markdown
+# Heading use Sentence Case, not Title Case
+# Specification for HypertextQL Database Format
+```
+
+HypertextQL implementations can require HypertextQL users to use CamelCase the usage of an implementation.
+
+✅
+```markdown
+# Heading use sentence case, not title case
+# Specification for HypertextQL database format
+```
+
+**Rationale:** to disambiguate proper nouns in headings.
