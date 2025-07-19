@@ -516,8 +516,8 @@ Each database table content row column MUST content be inside of the `td` tag.
     <td @id="users_1_id">1</td>
     <td @id="users_1_email">veganstraightedge@gmail.com</td>
     <td @id="users_1_name">Shane Becker</td>
-    <td @id="users_1_username">Midwest grown. Rubyist. Creator of HypertextQL.</td>
-    <td @id="users_1_bio"><time datetime="2013-05-29T15:48:47+07:00">Wed May 29 15:48:47 +0700 2013</time></td>
+    <td @id="users_1_username">@veganstraightedge</td>
+    <td @id="users_1_bio"><textarea readonly>Midwest grown. Rubyist. Creator of HypertextQL.</textarea></td>
     <td @id="users_1_created_at"><time datetime="2013-05-29T15:48:47+07:00">Wed May 29 15:48:47 +0700 2013</time></td>
     <td @id="users_1_updated_at"><time datetime="2013-05-29T16:23:19+07:00">Wed May 29 16:23:19 +0700 2013</time></td>
   </tr>
@@ -526,8 +526,8 @@ Each database table content row column MUST content be inside of the `td` tag.
     <td @id="users_2_id">2</td>
     <td @id="users_2_email">bob@example.com</td>
     <td @id="users_2_name">Bob Sackamano</td>
-    <td @id="users_2_username">A harebrained character on Seinfeld, never seen on screen, only mentioned by Kramer.</td>
-    <td @id="users_2_bio"><time datetime="2023-11-14T16:37:18+07:00">Tue Nov 16 15:37:18 +0700 2013</time></td>
+    <td @id="users_2_username">@bobsackamano</td>
+    <td @id="users_2_bio"><textarea readonly>A harebrained character on Seinfeld, never seen on screen, only mentioned by Kramer.</textarea></td>
     <td @id="users_2_created_at"><time datetime="2023-11-14T16:37:18+07:00">Tue Nov 16 15:37:18 +0700 2013</time></td>
     <td @id="users_2_updated_at"><time datetime="2023-11-14T16:42:56+07:00">Tue Nov 16 15:42:56 +0700 2013</time></td>
   </tr>
