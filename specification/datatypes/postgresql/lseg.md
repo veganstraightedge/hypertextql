@@ -1,3 +1,5 @@
+[HypertextQL specification](../../../) / [Datatypes](../../) / [PostgresSQL](../) / Line Segment (Geometric Type)
+
 # PostgreSQL Datatype: Line Segment
 ## Geometric Type
 

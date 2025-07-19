@@ -1,3 +1,5 @@
+[HypertextQL specification](../)
+
 # Common
 
 Specifications that apply to all HypertextQL HTML files.

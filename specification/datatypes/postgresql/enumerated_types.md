@@ -1,3 +1,5 @@
+[HypertextQL specification](../../../)
+
 # PostgreSQL Datatype: Enumerated Types (Enum)
 
 TKTK

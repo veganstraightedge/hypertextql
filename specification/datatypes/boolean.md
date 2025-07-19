@@ -1,5 +1,7 @@
+[HypertextQL specification](../../) / [Datatypes](../) / boolean
+
 # Datatype: boolean
 
-ActiveRecord column type (required):
+TKTK
 
-- `boolean` — boolean — stored as `t`|`f` or `1`|`0`
+`boolean` — boolean — stored as `t`|`f` or `1`|`0`

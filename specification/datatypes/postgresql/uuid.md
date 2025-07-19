@@ -1,3 +1,5 @@
+[HypertextQL specification](../../../) / [Datatypes](../../) / [PostgresSQL](../) / UUID
+
 # PostgreSQL Datatype: UUID
 
 TKTK

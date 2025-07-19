@@ -1,3 +1,5 @@
+[HypertextQL specification](../../../) / [Datatypes](../../) / [PostgresSQL](../) / cidr (Network Address Type)
+
 # PostgreSQL Datatype: cidr
 ## Network Address Type
 

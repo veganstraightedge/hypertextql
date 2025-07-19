@@ -1,3 +1,5 @@
+[HypertextQL specification](../../../) / [Datatypes](../../) / [PostgresSQL](../) / Bytea
+
 # PostgreSQL Datatype: Bytea
 
 TKTK

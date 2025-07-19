@@ -1,6 +1,9 @@
+[HypertextQL specification](../../../) / [Datatypes](../../)
+
 # PostgresSQL datatypes
 
 TKTK Consider extra datatypes from Postgres: https://guides.rubyonrails.org/active_record_postgresql.html
+
 TKTK Consider `data-*` to supplement HTML semantics when/if needed. (`data-hypertextql-*`)
 
 - [`array`](array.md)
@@ -12,11 +15,8 @@ TKTK Consider `data-*` to supplement HTML semantics when/if needed. (`data-hyper
 - [`interval`](interval.md)
 - [`json`](json.md)
 - [`jsonb`](jsonb.md)
-
-UUID types:
-
-- [`uuid`](uuid.md)
 - [`uuid primary keys`](uuid_primary_keys.md)
+- [`uuid`](uuid.md)
 
 Geometric Types:
 

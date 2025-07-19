@@ -1,3 +1,5 @@
+[HypertextQL specification](../../../) / [Datatypes](../../) / [PostgresSQL](../) / array
+
 # PostgreSQL Datatype: array
 
 TKTK

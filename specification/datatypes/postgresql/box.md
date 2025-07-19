@@ -1,3 +1,5 @@
+[HypertextQL specification](../../../) / [Datatypes](../../) / [PostgresSQL](../) / Box (Geometric Type)
+
 # PostgreSQL Datatype: Box
 ## Geometric Type
 

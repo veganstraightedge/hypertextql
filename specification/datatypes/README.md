@@ -1,3 +1,5 @@
+[HypertextQL specification](../../)
+
 # Datatypes
 
 Core and PostgreSQL.
@@ -19,7 +21,7 @@ Core and PostgreSQL.
 - [`time`](time.md)
 - [`timestamp`](timestamp.md)
 
-## [PostgreSQL extra datatypes](postgresql/README.md), optional
+## [PostgreSQL extra datatypes](postgresql/), optional
 
 Nice to have, though!
 

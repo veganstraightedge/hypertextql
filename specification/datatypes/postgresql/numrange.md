@@ -1,3 +1,5 @@
+[HypertextQL specification](../../../) / [Datatypes](../../) / [PostgresSQL](../) / numrange (Range Type)
+
 # PostgreSQL Datatype: numrange
 ## Range Type
 

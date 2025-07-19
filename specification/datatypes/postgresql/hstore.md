@@ -1,3 +1,5 @@
+[HypertextQL specification](../../../)
+
 # PostgreSQL Datatype: hstore
 
 TKTK

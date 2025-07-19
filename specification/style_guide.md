@@ -1,3 +1,5 @@
+[HypertextQL specification](../)
+
 # Style Guide
 
 Style guide/manual for HypertextQL copywriting in the specification and implementation

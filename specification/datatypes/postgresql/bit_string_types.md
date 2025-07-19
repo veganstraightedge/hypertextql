@@ -1,3 +1,5 @@
+[HypertextQL specification](../../../) / [Datatypes](../../) / [PostgresSQL](../) / Bit String Types
+
 # PostgreSQL Datatype: Bit String Types
 
 TKTK

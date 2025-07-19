@@ -1,3 +1,5 @@
+[HypertextQL specification](../)
+
 # Database
 
 ## Name
