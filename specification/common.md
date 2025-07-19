@@ -1,4 +1,4 @@
-[HypertextQL specification](../)
+[HypertextQL specification](../specification/)
 
 # Common
 
