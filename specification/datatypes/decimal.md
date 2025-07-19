@@ -1,4 +1,4 @@
-[HypertextQL specification](../../) / [Datatypes](../) / decimal
+[HypertextQL specification](../README.md) / [Datatypes](README.md) / decimal
 
 # Datatype: decimal
 

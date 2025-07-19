@@ -1,4 +1,4 @@
-[HypertextQL specification](../../) / [Datatypes](../) / string
+[HypertextQL specification](../README.md) / [Datatypes](README.md) / string
 
 # Datatype: string
 

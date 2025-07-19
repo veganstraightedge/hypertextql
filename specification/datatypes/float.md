@@ -1,4 +1,4 @@
-[HypertextQL specification](../../) / [Datatypes](../) / float
+[HypertextQL specification](../README.md) / [Datatypes](README.md) / float
 
 # Datatype: float
 

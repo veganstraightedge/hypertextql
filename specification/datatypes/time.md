@@ -1,4 +1,4 @@
-[HypertextQL specification](../../) / [Datatypes](../) / time
+[HypertextQL specification](../README.md) / [Datatypes](README.md) / time
 
 # Datatype: time
 

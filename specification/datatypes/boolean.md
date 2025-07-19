@@ -1,4 +1,4 @@
-[HypertextQL specification](../../) / [Datatypes](../) / boolean
+[HypertextQL specification](../README.md) / [Datatypes](README.md) / boolean
 
 # Datatype: boolean
 

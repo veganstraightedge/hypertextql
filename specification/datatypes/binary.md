@@ -1,4 +1,4 @@
-[HypertextQL specification](../../) / [Datatypes](../) / binary
+[HypertextQL specification](../README.md) / [Datatypes](README.md) / binary
 
 # Datatype: binary
 

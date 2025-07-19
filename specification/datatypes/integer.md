@@ -1,4 +1,4 @@
-[HypertextQL specification](../../) / [Datatypes](../) / integer
+[HypertextQL specification](../README.md) / [Datatypes](README.md) / integer
 
 # Datatype: integer
 

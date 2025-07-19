@@ -21,9 +21,9 @@ Core and PostgreSQL.
 - [`time`](time.md)
 - [`timestamp`](timestamp.md)
 
-## [PostgreSQL extra datatypes](postgresql/), optional
+## [PostgreSQL extra datatypes](postgresql/README.md)
 
-Nice to have, though!
+**Optional.** Nice to have, though!
 
 - [`array`](postgresql/array.md)
 - [`hstore`](postgresql/hstore.md)
