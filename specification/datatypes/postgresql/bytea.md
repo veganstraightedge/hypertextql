@@ -1,4 +1,4 @@
-[HypertextQL specification](../../README.md) / [Datatypes](../README.md) /  [PostgresSQL](README) / Bytea
+[HypertextQL specification](../../README.md) / [Datatypes](../README.md) / [PostgresSQL](README.md) / Bytea
 
 # PostgreSQL Datatype: Bytea
 

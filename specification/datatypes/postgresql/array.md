@@ -1,4 +1,4 @@
-[HypertextQL specification](../../README.md) / [Datatypes](../README.md) /  [PostgresSQL](README) / array
+[HypertextQL specification](../../README.md) / [Datatypes](../README.md) / [PostgresSQL](README.md) / array
 
 # PostgreSQL Datatype: array
 

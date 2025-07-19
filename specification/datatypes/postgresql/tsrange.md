@@ -1,4 +1,4 @@
-[HypertextQL specification](../../README.md) / [Datatypes](../README.md) /  [PostgresSQL](README) / tsrange (Range Type)
+[HypertextQL specification](../../README.md) / [Datatypes](../README.md) / [PostgresSQL](README.md) / tsrange (Range Type)
 
 # PostgreSQL Datatype: tsrange
 ## Range Type

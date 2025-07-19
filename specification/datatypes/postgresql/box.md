@@ -1,4 +1,4 @@
-[HypertextQL specification](../../README.md) / [Datatypes](../README.md) /  [PostgresSQL](README) / Box (Geometric Type)
+[HypertextQL specification](../../README.md) / [Datatypes](../README.md) / [PostgresSQL](README.md) / Box (Geometric Type)
 
 # PostgreSQL Datatype: Box
 ## Geometric Type

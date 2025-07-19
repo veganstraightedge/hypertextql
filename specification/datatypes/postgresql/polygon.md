@@ -1,4 +1,4 @@
-[HypertextQL specification](../../README.md) / [Datatypes](../README.md) /  [PostgresSQL](README) / Polygon (Geometric Type)
+[HypertextQL specification](../../README.md) / [Datatypes](../README.md) / [PostgresSQL](README.md) / Polygon (Geometric Type)
 
 # PostgreSQL Datatype: Polygon
 ## Geometric Type

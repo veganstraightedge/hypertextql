@@ -1,4 +1,4 @@
-[HypertextQL specification](../../README.md) / [Datatypes](../README.md) /  [PostgresSQL](README) / UUID Primary Keys
+[HypertextQL specification](../../README.md) / [Datatypes](../README.md) / [PostgresSQL](README.md) / UUID Primary Keys
 
 # PostgreSQL Datatype:  UUID Primary Keys
 
