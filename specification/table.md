@@ -533,20 +533,16 @@ Each database table content row primary key MUST contain a section link `a` to c
 </tbody>
 ```
 
-#### Column types
+---
+
+# TKTK: Column types
 
 TKTK think about spec for leading/trailing blank space in content cells
 
 TKTK how to store and display each datatype of content
 
----
-
-
-
-<!--
-## Foreign keys
+# TKTK: Foreign keys
 
 TKTK Link from foreign key to table page and table row
 TKTK [rel=canonical]
 TKTK https://microformats.org/wiki/rel-canonical
--->

@@ -1,4 +1,4 @@
-# TKTK: Datatype: boolean
+# Datatype: boolean
 
 ActiveRecord column type (required):
 
