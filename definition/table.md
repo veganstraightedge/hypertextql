@@ -251,6 +251,11 @@ A database table schema column datatype MUST be stored in the `th` tag's `data-h
 </table>
 ```
 
+### Primary key column
+
+A database table schema MUST specify one database table schema column as the _primary key_.
+A _primary key_ MUST be defined on a database table schema column `th` tag in the `class` attribute with a value of `hypertextql_primary_key`.
+
 #### Column datatypes
 
 A database table schema column datatype must be one of the defined [data types](datatypes.md).
