@@ -278,9 +278,9 @@ A _primary key_ MUST be defined on a database table schema column `th` tag in th
 
 #### Column datatypes
 
-A database table schema column datatype must be one of the defined [data types](datatypes.md).
+A database table schema column datatype must be one of the defined [data types](datatypes/README.md).
 
-Or one of the [PostgreSQL datatypes](datatypes/postgresql.md).
+Or one of the [PostgreSQL datatypes](datatypes/postgresql/README.md).
 
 ---
 

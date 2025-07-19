@@ -4,4 +4,4 @@
 2. [Common](common.md)
 3. [Database](database.md)
 4. [Table](table.md)
-5. [Datatypes](datatypes/)
+5. [Datatypes](datatypes/README.md)
