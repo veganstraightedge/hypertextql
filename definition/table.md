@@ -12,6 +12,11 @@ A database table HTML file MUST have the same name as the database table.
 users.html
 ```
 
+### Link to database root
+
+TKTK: link
+https://microformats.org/wiki/rel-home
+
 ### Table tag
 
 A database table HTML file MUST contain one HTML `table`.
@@ -244,6 +249,10 @@ Content rows MUST be in a `tr` tag.
 Content rows MUST be wrapped in a `tbody` tag.
 Content rows MUST have the same number of column `td` tags as `th` tags in the schema header `thead` row `tr`.
 ...TEMP
+
+TKTK Link from foreign key to table page and table row
+TKTK [rel=canonical]
+TKTK https://microformats.org/wiki/rel-canonical
 
 ```html
 <tbody>
