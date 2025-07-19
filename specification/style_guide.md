@@ -1,4 +1,4 @@
-[HypertextQL specification](../specification/)
+[HypertextQL specification](../specification/README.md)
 
 # Style Guide
 
