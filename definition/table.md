@@ -1,28 +1,41 @@
+
 # Table
 
 ## General
 
 ### File
 
-A table MUST be stored in an HTML file.
-A table HTML file MUST have the same name as the table.
+A database table MUST be stored in an HTML file.
+A database table HTML file MUST have an `.html` file extension.
+A database table HTML file MUST have the same name as the database table.
 
 ```
-## An html file for a table named 'users'
+# An HTML file for a database table named 'users'
 users.html
+```
+
+### Table tag
+
+A database table HTML file MUST contain one HTML `table`.
+
+```html
+<table>
+</table>
 ```
 
 ---
 
 ## Metadata
 
-A table's metadata is information about the table itself.
-Not the content of the table. Not the schema of the table.
+A database table's metadata is information about the database table itself.
+Not the content of the database table.
+Not the schema of the database table.
 
 ### Name
 
-A table MUST have a name.
-A table's name MUST be stored in the table tag's `id` attribute.
+A database table MUST have a name.
+A database table's name MUST be stored in the `table` tag's `id` attribute.
+A database table's `table` tag `id` attribute value MUST be the same as the filename, without the file extension.
 
 ```html
 <table id="users">
@@ -31,8 +44,9 @@ A table's name MUST be stored in the table tag's `id` attribute.
 
 ### Description
 
-A table CAN have a description.
-If present, a table's optional description MUST be stored in the `table` tag's child `caption` tag.
+A database table CAN have a description.
+If present, a database table's optional description MUST be stored in the `table` tag's child `caption` tag.
+If included, the `caption` tag must be the first child of its parent `table` tag.
 
 ```html
 <table id="users">
@@ -44,7 +58,7 @@ If present, a table's optional description MUST be stored in the `table` tag's c
 
 ## Schema
 
-A table's schema defines the structure of a table:
+A database table's schema defines the structure of a table:
 
 - how many columns there are
 - what the columns are named
@@ -54,7 +68,7 @@ A table's schema defines the structure of a table:
 
 ### Head
 
-A table's schema MUST be defined in the `table`'s `thead`.
+A database table's schema MUST be defined in the `table`'s `thead`.
 
 ```html
 <table id="users">
@@ -67,9 +81,9 @@ A table's schema MUST be defined in the `table`'s `thead`.
 
 ### Row
 
-All columns MUST be wrapped in `tr` tag.
-The schema row MUST be wrapped in `thead` tag.
-A table MUST have only one schema row.
+All database table schema columns MUST be wrapped in a `tr` tag.
+The database table schema `tr` row MUST be wrapped in `thead` tag.
+A database table's `table` tag MUST have only one schema `tr` row.
 
 ```html
 <table id="users">
@@ -84,7 +98,7 @@ A table MUST have only one schema row.
 
 ### Columns
 
-Each column MUST be in a `th` tag.
+Each database table schema column MUST be in a `th` tag.
 
 ```html
 <table id="users">
@@ -98,9 +112,9 @@ Each column MUST be in a `th` tag.
 </table>
 ```
 
-### Column scope
+#### Column scope
 
-All columns MUST have a `scope` attribute with `value` of `col`.
+All database table schema columns MUST have a `scope` attribute with `value` of `col`.
 
 ```html
 <table id="users">
@@ -114,10 +128,10 @@ All columns MUST have a `scope` attribute with `value` of `col`.
 </table>
 ```
 
-### Column name
+#### Column name
 
-All columns MUST have a name.
-A column's name MUST be stored in the `th` tag's content.
+All database table schema columns MUST have a name.
+A database table schema column's name MUST be stored in the `th` tag's content.
 
 ```html
 <table id="users">
@@ -129,6 +143,7 @@ A column's name MUST be stored in the `th` tag's content.
       <th scope="col">email</th>
       <th scope="col">name</th>
       <th scope="col">username</th>
+      <th scope="col">bio</th>
       <th scope="col">created_at</th>
       <th scope="col">updated_at</th>
     </tr>
@@ -136,11 +151,11 @@ A column's name MUST be stored in the `th` tag's content.
 </table>
 ```
 
-### Column slug
+#### Column slug
 
-All columns MUST have a slug.
-A column's slug MUST be stored in the `id` attribute.
-A column's slug MUST be a composite of table name and column name joined by an underscore `[table name, "_", column name]`.
+All database table schema columns MUST have a slug.
+A database table schema column's slug MUST be stored in the `id` attribute.
+A database table schema column's slug MUST be a composite of table name and column name joined by an underscore `[table name, "_", column name]`.
 
 ```html
 <table id="users">
@@ -152,6 +167,7 @@ A column's slug MUST be a composite of table name and column name joined by an u
       <th scope="col" id="users_email">email</th>
       <th scope="col" id="users_name">name</th>
       <th scope="col" id="users_username">username</th>
+      <th scope="col" id="users_bio">bio</th>
       <th scope="col" id="users_created_at">created_at</th>
       <th scope="col" id="users_updated_at">updated_at</th>
     </tr>
@@ -159,10 +175,10 @@ A column's slug MUST be a composite of table name and column name joined by an u
 </table>
 ```
 
-### Column type
+#### Column type
 
-All columns MUST have a type.
-A column's type MUST be stored in the `th` tag's `data-hypertextql-type` data attribute.
+All database table schema columns MUST have a type.
+A database table schema column's datatype MUST be stored in the `th` tag's `data-hypertextql-type` data attribute.
 
 ```html
 <table id="users">
@@ -170,10 +186,11 @@ A column's type MUST be stored in the `th` tag's `data-hypertextql-type` data at
 
   <thead>
     <tr>
-      <th scope="col" id="users_id" data-hypertextql-type="integer">id</th>
-      <th scope="col" id="users_email" data-hypertextql-type="string">email</th>
-      <th scope="col" id="users_name" data-hypertextql-type="string">name</th>
-      <th scope="col" id="users_username" data-hypertextql-type="string">username</th>
+      <th scope="col" id="users_id"         data-hypertextql-type="integer">id</th>
+      <th scope="col" id="users_email"      data-hypertextql-type="string">email</th>
+      <th scope="col" id="users_name"       data-hypertextql-type="string">name</th>
+      <th scope="col" id="users_username"   data-hypertextql-type="string">username</th>
+      <th scope="col" id="users_bio"        data-hypertextql-type="text">bio</th>
       <th scope="col" id="users_created_at" data-hypertextql-type="datetime">created_at</th>
       <th scope="col" id="users_updated_at" data-hypertextql-type="datetime">updated_at</th>
     </tr>
@@ -181,31 +198,75 @@ A column's type MUST be stored in the `th` tag's `data-hypertextql-type` data at
 </table>
 ```
 
+#### Column datatypes
+
+A database table schema column's datatype must be one of these allowed types:
+
+- integer
+- string
+- text
+- datetime
+- TKTK: add more types
+
+---
+
+## Table rollup schema (what is a better name?)
+
+TKTK: write up optional `tfoot` with table information. Column counts, etc. Think about this more.
+
+> The `<tfoot>` HTML element encapsulates a set of table rows (`<tr>` elements), indicating that they comprise the foot of a table with information about the table's columns.
+> This is usually a summary of the columns, e.g., a sum of the given numbers in a column.
+> — [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/tfoot)
+
+### Footer
+
+TKTK
+
+MUST be wrapped in a `tfoot` tag.
+
+### Row
+
+TKTK
+MUST be a `tr` tag for each rollup rows.
+
+### Columns
+
+TKTK
+MUST have `th[scope=row]` tag as first tag before `td` tags.
+TKTK does this mean there needs to be a blank column in `tbody` as the first column?
+
+MUST be a `td` for each column content value.
+
 ---
 
 ## Content
 
-TODO
+TEMP...
+Content rows MUST be in a `tr` tag.
+Content rows MUST be wrapped in a `tbody` tag.
+Content rows MUST have the same number of column `td` tags as `th` tags in the schema header `thead` row `tr`.
+...TEMP
 
-<!-- TEMP... -->
-<!-- Content rows MUST be in a tr tag -->
-<!-- Content rows MUST be wrapped in a tbody tag -->
-<!-- Content rows MUST have the same number of column td tags as the header row has th tags -->
-
+```html
 <tbody>
-  <tr>
-    <td>1</td>
-    <td>veganstraightedge@gmail.com</td>
-    <td>Shane Becker</td>
-    <td><time datetime="2013-05-29T15:48:47+07:00">Wed May 29 15:48:47 +0700 2013</time></td>
-    <td><time datetime="2013-05-29T15:48:47+07:00">Wed May 29 15:48:47 +0700 2013</time></td>
+  <tr id="users_1">
+    <td id="users_1_id">1</td>
+    <td id="users_1_email">veganstraightedge@gmail.com</td>
+    <td id="users_1_name">Shane Becker</td>
+    <td id="users_1_username">Midwest grown. Rubyist. Creator of HypertextQL.</td>
+    <td id="users_1_bio"><time datetime="2013-05-29T15:48:47+07:00">Wed May 29 15:48:47 +0700 2013</time></td>
+    <td id="users_1_created_at"><time datetime="2013-05-29T15:48:47+07:00">Wed May 29 15:48:47 +0700 2013</time></td>
+    <td id="users_1_updated_at"><time datetime="2013-05-29T16:23:19+07:00">Wed May 29 16:23:19 +0700 2013</time></td>
   </tr>
-  <tr>
-    <td>2</td>
-    <td>bob@example.com</td>
-    <td>Bob Sackamano</td>
-    <td><time datetime="2023-11-14T16:37:18+07:00">Tue Nov 16 15:37:18 +0700 2013</time></td>
-    <td><time datetime="2023-11-14T16:37:18+07:00">Tue Nov 16 15:37:18 +0700 2013</time></td>
+
+  <tr id="users_2">
+    <td id="users_2_id">2</td>
+    <td id="users_2_email">bob@example.com</td>
+    <td id="users_2_name">Bob Sackamano</td>
+    <td id="users_2_username">A harebrained character on Seinfeld, never seen on screen, only mentioned by Kramer.</td>
+    <td id="users_2_bio"><time datetime="2023-11-14T16:37:18+07:00">Tue Nov 16 15:37:18 +0700 2013</time></td>
+    <td id="users_2_created_at"><time datetime="2023-11-14T16:37:18+07:00">Tue Nov 16 15:37:18 +0700 2013</time></td>
+    <td id="users_2_updated_at"><time datetime="2023-11-14T16:42:56+07:00">Tue Nov 16 15:42:56 +0700 2013</time></td>
   </tr>
 </tbody>
-<!-- ...TEMP -->
+```
