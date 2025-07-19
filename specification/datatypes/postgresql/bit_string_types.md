@@ -1,4 +1,4 @@
-[HypertextQL specification](../../../) / [Datatypes](../../) / [PostgresSQL](../) / Bit String Types
+[HypertextQL specification](../../README.md) / [Datatypes](../README.md) /  [PostgresSQL](README) / Bit String Types
 
 # PostgreSQL Datatype: Bit String Types
 

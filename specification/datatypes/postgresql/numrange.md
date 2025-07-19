@@ -1,4 +1,4 @@
-[HypertextQL specification](../../../) / [Datatypes](../../) / [PostgresSQL](../) / numrange (Range Type)
+[HypertextQL specification](../../README.md) / [Datatypes](../README.md) /  [PostgresSQL](README) / numrange (Range Type)
 
 # PostgreSQL Datatype: numrange
 ## Range Type

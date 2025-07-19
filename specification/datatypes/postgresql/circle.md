@@ -1,4 +1,4 @@
-[HypertextQL specification](../../../) / [Datatypes](../../) / [PostgresSQL](../) / Circle (Geometric Type)
+[HypertextQL specification](../../README.md) / [Datatypes](../README.md) /  [PostgresSQL](README) / Circle (Geometric Type)
 
 # PostgreSQL Datatype: Circle
 ## Geometric Type

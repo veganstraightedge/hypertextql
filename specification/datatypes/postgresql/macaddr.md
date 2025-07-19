@@ -1,4 +1,4 @@
-[HypertextQL specification](../../../) / [Datatypes](../../) / [PostgresSQL](../) / MAC address (Network Address Type)
+[HypertextQL specification](../../README.md) / [Datatypes](../README.md) /  [PostgresSQL](README) / MAC address (Network Address Type)
 
 # PostgreSQL Datatype: MAC address
 ## Network Address Type

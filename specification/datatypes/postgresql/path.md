@@ -1,4 +1,4 @@
-[HypertextQL specification](../../../) / [Datatypes](../../) / [PostgresSQL](../) / Path (Geometric Type)
+[HypertextQL specification](../../README.md) / [Datatypes](../README.md) /  [PostgresSQL](README) / Path (Geometric Type)
 
 # PostgreSQL Datatype: Path
 ## Geometric Type

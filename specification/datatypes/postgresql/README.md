@@ -1,4 +1,4 @@
-[HypertextQL specification](../../../) / [Datatypes](../../)
+[HypertextQL specification](../../README.md) / [Datatypes](../README.md)
 
 # PostgresSQL datatypes
 

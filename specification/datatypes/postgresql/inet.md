@@ -1,4 +1,4 @@
-[HypertextQL specification](../../../) / [Datatypes](../../) / [PostgresSQL](../) / inet (Network Address Type)
+[HypertextQL specification](../../README.md) / [Datatypes](../README.md) /  [PostgresSQL](README) / inet (Network Address Type)
 
 # PostgreSQL Datatype: inet
 ## Network Address Type
