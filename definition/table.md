@@ -259,35 +259,6 @@ A database table schema column's datatype must be one of these allowed types:
 
 ---
 
-## Table rollup schema (what is a better name?)
-
-TKTK: write up optional `tfoot` with table information. Column counts, etc. Think about this more.
-
-> The `<tfoot>` HTML element encapsulates a set of table rows (`<tr>` elements), indicating that they comprise the foot of a table with information about the table's columns.
-> This is usually a summary of the columns, e.g., a sum of the given numbers in a column.
-> — [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/tfoot)
-
-## Footer
-
-TKTK
-
-MUST be wrapped in a `tfoot` tag.
-
-## Row
-
-TKTK
-MUST be a `tr` tag for each rollup rows.
-
-## Columns
-
-TKTK
-MUST have `th[scope=row]` tag as first tag before `td` tags.
-TKTK does this mean there needs to be a blank column in `tbody` as the first column?
-
-MUST be a `td` for each column content value.
-
----
-
 ## Content
 
 TEMP...
