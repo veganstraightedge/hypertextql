@@ -1,4 +1,4 @@
-[HypertextQL specification](../specification/README.md)
+[HypertextQL specification](README.md)
 
 # Database
 

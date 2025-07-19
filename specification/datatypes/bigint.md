@@ -1,4 +1,4 @@
-[HypertextQL specification](../../) / [Datatypes](../) / bigint
+[HypertextQL specification](../README.md) / [Datatypes](README.md) / bigint
 
 # Datatype: bigint
 
