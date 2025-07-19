@@ -1,8 +1,6 @@
 
 # Table
 
-## General
-
 ### File
 
 A database table MUST be stored in an HTML file.
