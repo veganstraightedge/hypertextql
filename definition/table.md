@@ -1,7 +1,6 @@
-
 # Database Table
 
-### File
+## File
 
 A database table MUST be stored in an HTML file.
 A database table HTML file MUST have an `.html` file extension.
@@ -12,12 +11,42 @@ A database table HTML file MUST have the same name as the database table.
 users.html
 ```
 
-### Link to database root
+## Database heading
 
-TKTK: link
-https://microformats.org/wiki/rel-home
+A database table HTML file MUST have a heading `h1` with the name of the database as the content of the tag.
 
-### Table tag
+```html
+<h1>blog</h1>
+```
+
+## Link to database root
+
+A database table HTML file MUST have a link `a` to the database `index.html` HTML file at the root of the folder.
+The link to the database `index.html` HTML file MUST be inside of an heading `h1` tag.
+
+```html
+<h1><a href="/blog">blog</a></h1>
+```
+
+The link to the database `index.html` HTML file at the root of the folder MUST include a `rel` attribute with a value of `home`. [rel-home](https://microformats.org/wiki/rel-home)
+
+```html
+<h1><a href="/blog" rel="home">blog</a></h1>
+```
+
+A database table HTML file MUST have only one link `a` to the database `index.html` HTML file at the root of the folder.
+A database table HTML file MUST have only one `h1` heading.
+
+## Table heading
+
+A database table HTML file MUST have a heading `h2` with the database table name as the content of the tag.
+A database table HTML file MUST have only one `h2` heading.
+
+```html
+<h2>users</h2>
+```
+
+## Table tag
 
 A database table HTML file MUST contain one HTML `table`.
 
@@ -33,6 +62,8 @@ Each HTML  `table` for a database table MUST contain `class` attribute with a va
 </table>
 ```
 
+A database table HTML file MUST contain only one HTML `table` with the `class` attribute with a value of `hypertextql-table`.
+
 ---
 
 ## Metadata
@@ -41,7 +72,7 @@ A database table's metadata is information about the database table itself.
 Not the content of the database table.
 Not the schema of the database table.
 
-### Name
+## Name
 
 A database table MUST have a name.
 A database table's name MUST be stored in the `table` tag's `id` attribute.
@@ -52,7 +83,15 @@ A database table's `table` tag `id` attribute value MUST be the same as the file
 </table>
 ```
 
-### Description
+A database table name with multiple words SHOULD use underscores as a word separator.
+
+```
+post_tags
+status_codes
+book_shelves
+```
+
+## Description
 
 A database table CAN have a description.
 If present, a database table's optional description MUST be stored in the `table` tag's child `caption` tag.
@@ -76,7 +115,7 @@ A database table's schema defines the structure of a table:
 - whether or not a column requires a value
 - whether or not there is a default value for a column
 
-### Head
+## Head
 
 A database table's schema MUST be defined in the `table`'s `thead`.
 
@@ -89,7 +128,7 @@ A database table's schema MUST be defined in the `table`'s `thead`.
 </table>
 ```
 
-### Row
+## Row
 
 All database table schema columns MUST be wrapped in a `tr` tag.
 The database table schema `tr` row MUST be wrapped in `thead` tag.
@@ -106,7 +145,7 @@ A database table's `table` tag MUST have only one schema `tr` row.
 </table>
 ```
 
-### Columns
+## Columns
 
 Each database table schema column MUST be in a `th` tag.
 
@@ -122,7 +161,7 @@ Each database table schema column MUST be in a `th` tag.
 </table>
 ```
 
-#### Column scope
+### Column scope
 
 All database table schema columns MUST have a `scope` attribute with `value` of `col`.
 
@@ -138,7 +177,7 @@ All database table schema columns MUST have a `scope` attribute with `value` of 
 </table>
 ```
 
-#### Column name
+### Column name
 
 All database table schema columns MUST have a name.
 A database table schema column's name MUST be stored in the `th` tag's content.
@@ -161,7 +200,7 @@ A database table schema column's name MUST be stored in the `th` tag's content.
 </table>
 ```
 
-#### Column slug
+### Column slug
 
 All database table schema columns MUST have a slug.
 A database table schema column's slug MUST be stored in the `id` attribute.
@@ -185,7 +224,7 @@ A database table schema column's slug MUST be a composite of table name and colu
 </table>
 ```
 
-#### Column type
+### Column type
 
 All database table schema columns MUST have a type.
 A database table schema column's datatype MUST be stored in the `th` tag's `data-hypertextql-type` data attribute.
@@ -208,7 +247,7 @@ A database table schema column's datatype MUST be stored in the `th` tag's `data
 </table>
 ```
 
-#### Column datatypes
+### Column datatypes
 
 A database table schema column's datatype must be one of these allowed types:
 
@@ -228,18 +267,18 @@ TKTK: write up optional `tfoot` with table information. Column counts, etc. Thin
 > This is usually a summary of the columns, e.g., a sum of the given numbers in a column.
 > — [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/tfoot)
 
-### Footer
+## Footer
 
 TKTK
 
 MUST be wrapped in a `tfoot` tag.
 
-### Row
+## Row
 
 TKTK
 MUST be a `tr` tag for each rollup rows.
 
-### Columns
+## Columns
 
 TKTK
 MUST have `th[scope=row]` tag as first tag before `td` tags.

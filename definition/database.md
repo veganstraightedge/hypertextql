@@ -1,9 +1,9 @@
 # Database
 
-## Folder
+## Name
 
 A HypertextQL database MUST be in one folder.
-A HypertextQL database folder MUST be named the same as the database.
+A HypertextQL database folder name is the name database.
 
 ```
 # A database named "blog"
@@ -11,6 +11,13 @@ A HypertextQL database folder MUST be named the same as the database.
 
 # A database named "razzledazzle"
 /razzledazzle
+```
+
+A database table name with multiple words SHOULD use underscores as a word separator.
+
+```
+razzle_dazzle
+example_dot_com
 ```
 
 ## Index file
