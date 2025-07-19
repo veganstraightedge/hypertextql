@@ -505,6 +505,34 @@ Each database table content row column MUST content be inside of the `td` tag.
 </tbody>
 ```
 
+### Primary key columns
+
+Each database table content row primary key MUST contain a section link `a` to content row [_row slug_](#row-slug).
+
+```html
+<tbody>
+  <tr @id="users_1">
+    <td @id="users_1_id"><a href="#users_1">1</a></td>
+    <td @id="users_1_email">veganstraightedge@gmail.com</td>
+    <td @id="users_1_name">Shane Becker</td>
+    <td @id="users_1_username">@veganstraightedge</td>
+    <td @id="users_1_bio"><textarea readonly>Midwest grown. Rubyist. Creator of HypertextQL.</textarea></td>
+    <td @id="users_1_created_at"><time datetime="2013-05-29T15:48:47+07:00">Wed May 29 15:48:47 +0700 2013</time></td>
+    <td @id="users_1_updated_at"><time datetime="2013-05-29T16:23:19+07:00">Wed May 29 16:23:19 +0700 2013</time></td>
+  </tr>
+
+  <tr @id="users_2">
+    <td @id="users_2_id"><a href="#users_2">1</a></td>
+    <td @id="users_2_email">bob@example.com</td>
+    <td @id="users_2_name">Bob Sackamano</td>
+    <td @id="users_2_username">@bobsackamano</td>
+    <td @id="users_2_bio"><textarea readonly>A harebrained character on Seinfeld, never seen on screen, only mentioned by Kramer.</textarea></td>
+    <td @id="users_2_created_at"><time datetime="2023-11-14T16:37:18+07:00">Tue Nov 16 15:37:18 +0700 2013</time></td>
+    <td @id="users_2_updated_at"><time datetime="2023-11-14T16:42:56+07:00">Tue Nov 16 15:42:56 +0700 2013</time></td>
+  </tr>
+</tbody>
+```
+
 #### Column types
 
 TKTK think about spec for leading/trailing blank space in content cells
