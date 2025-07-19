@@ -26,6 +26,13 @@ A database table HTML file MUST contain one HTML `table`.
 </table>
 ```
 
+Each HTML  `table` for a database table MUST contain `class` attribute with a value of `hypertextql-table`
+
+```html
+<table class="hypertextql-table">
+</table>
+```
+
 ---
 
 ## Metadata
@@ -41,7 +48,7 @@ A database table's name MUST be stored in the `table` tag's `id` attribute.
 A database table's `table` tag `id` attribute value MUST be the same as the filename, without the file extension.
 
 ```html
-<table id="users">
+<table class="hypertextql-table" id="users">
 </table>
 ```
 
@@ -52,7 +59,7 @@ If present, a database table's optional description MUST be stored in the `table
 If included, the `caption` tag must be the first child of its parent `table` tag.
 
 ```html
-<table id="users">
+<table class="hypertextql-table" id="users">
   <caption>All of our users: customers, admins, engineers...</caption>
 </table>
 ```
@@ -74,7 +81,7 @@ A database table's schema defines the structure of a table:
 A database table's schema MUST be defined in the `table`'s `thead`.
 
 ```html
-<table id="users">
+<table class="hypertextql-table" id="users">
   <caption>All of our users: customers, admins, engineers...</caption>
 
   <thead>
@@ -89,7 +96,7 @@ The database table schema `tr` row MUST be wrapped in `thead` tag.
 A database table's `table` tag MUST have only one schema `tr` row.
 
 ```html
-<table id="users">
+<table class="hypertextql-table" id="users">
   <caption>All of our users: customers, admins, engineers...</caption>
 
   <thead>
@@ -104,7 +111,7 @@ A database table's `table` tag MUST have only one schema `tr` row.
 Each database table schema column MUST be in a `th` tag.
 
 ```html
-<table id="users">
+<table class="hypertextql-table" id="users">
   <caption>All of our users: customers, admins, engineers...</caption>
 
   <thead>
@@ -120,7 +127,7 @@ Each database table schema column MUST be in a `th` tag.
 All database table schema columns MUST have a `scope` attribute with `value` of `col`.
 
 ```html
-<table id="users">
+<table class="hypertextql-table" id="users">
   <caption>All of our users: customers, admins, engineers...</caption>
 
   <thead>
@@ -137,7 +144,7 @@ All database table schema columns MUST have a name.
 A database table schema column's name MUST be stored in the `th` tag's content.
 
 ```html
-<table id="users">
+<table class="hypertextql-table" id="users">
   <caption>All of our users: customers, admins, engineers...</caption>
 
   <thead>
@@ -161,7 +168,7 @@ A database table schema column's slug MUST be stored in the `id` attribute.
 A database table schema column's slug MUST be a composite of table name and column name joined by an underscore `[table name, "_", column name]`.
 
 ```html
-<table id="users">
+<table class="hypertextql-table" id="users">
   <caption>All of our users: customers, admins, engineers...</caption>
 
   <thead>
@@ -184,7 +191,7 @@ All database table schema columns MUST have a type.
 A database table schema column's datatype MUST be stored in the `th` tag's `data-hypertextql-type` data attribute.
 
 ```html
-<table id="users">
+<table class="hypertextql_table" id="users">
   <caption>All of our users: customers, admins, engineers...</caption>
 
   <thead>
@@ -205,10 +212,10 @@ A database table schema column's datatype MUST be stored in the `th` tag's `data
 
 A database table schema column's datatype must be one of these allowed types:
 
-- integer
-- string
-- text
-- datetime
+- `integer`
+- `string`
+- `text`
+- `datetime`
 - TKTK: add more types
 
 ---
