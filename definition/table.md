@@ -1,5 +1,5 @@
 
-# Table
+# Database Table
 
 ### File
 

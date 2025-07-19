@@ -1,43 +1,59 @@
 # Database
 
-## General
+## Folder
 
-### UTF-8
+A HypertextQL database MUST be in one folder.
+A HypertextQL database folder MUST be named the same as the database.
 
-All HypertextQL HTML files MUST use a `UTF-8` character encoding.
-All HypertextQL HTML files MUST have a `meta` tag with `charset` attribute and `utf-8` value.
+```
+# A database named "blog"
+/blog
 
-```html
-<meta charset="utf-8">
+# A database named "razzledazzle"
+/razzledazzle
 ```
 
-### Language
+## Index file
 
-TKTK
-Optional `lang="en"`.
-Defaults to `en`.
+A HypertextQL database MUST contain an `index.html` HTML file at the root of the folder.
 
-### Language direction
+```
+# A database named "blog"
+/blog/index.html
+```
 
-TKTK
-Optional `dir="ltr"` or `dir="rtl"`.
-Defaults to `ltr`.
+A HypertextQL database `index.html` HTML file MUST contain an ordered list `ol`.
+The list `ol` MUST have an `id` attribute with the value of `hypertextql_tables`.
+The list `ol` MUST contain one item `li` per database table.
+Each list item `li` MUST contain one link `a` to that database table's page.
+The link `a` content MUST be the name of the database table that is linked to.
+The list `li` items SHOULD be sorted in lexicographical (alphabetical) order.
 
-### Folder/directory
-
-TKTK: top level index file with a list of tables
-
-TKTK: https://github.com/veganstraightedge/hypertextql/issues/8
+```html
+<ol id="hypertextql_tables">
+  <li><a href="comments.html">comments</a></li>
+  <li><a href="posts.html">posts</a></li>
+  <li><a href="taggings.html">taggings</a></li>
+  <li><a href="tags.html">tags</a></li>
+  <li><a href="users.html">users</a></li>
+</ol>
+```
 
 ### Prefetch table pages
 
-TKTK: to make future fetches faster. Premature?
+A HypertextQL database `index.html` HTML file SHOULD `link` tags in the `head` tag with `rel` attribute with the value of `prefetch` and `href` with a value of each database table HTML page.
+The `link[rel-prefetch]` tags SHOULD be sorted in lexicographical (alphabetical) order.
 
 ```html
 <head>
-  <link rel="prefetch" href="/[database]/[table_1].html" />
-  <link rel="prefetch" href="/[database]/[table_2].html" />
-  <link rel="prefetch" href="/[database]/[table_3].html" />
+  <link rel="prefetch" href="[table_1].html" />
+  <link rel="prefetch" href="[table_2].html" />
+  <link rel="prefetch" href="[table_3].html" />
   ...
 </head>
 ```
+
+## Table files
+
+A HypertextQL database folder MUST contain one HTML file for each database table.
+See [Database Table](table.md) for specification of database table HTML files.
