@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description = 'SQL database backed by HTML files, HypertextQL spec, and reference implementation (Ruby)'
   spec.homepage = 'https://github.com/veganstraightedge/hypertextql'
   spec.license = 'MIT'
-  spec.required_ruby_version = '>= 3.4.5'
+  spec.required_ruby_version = '>= 3.4.4'
 
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = 'https://github.com/veganstraightedge/hypertextql'
