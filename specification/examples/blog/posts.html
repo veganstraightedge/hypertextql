@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>HypertextQL example database: blog — posts</title>
+</head>
+
+<body>
+  <h1><a href="/blog" rel="home">blog</a></h1>
+  <h2>posts</h2>
+
+  <table class="hypertextql-table" @id="posts">
+    <caption>Weblog posts / articles: title and structure text content</caption>
+
+    <thead>
+      <tr>
+        <th scope="col" @id="posts_id"         data-hypertextql-type="integer" class="hypertextql_primary_key">id</th>
+        <th scope="col" @id="posts_user_id"    data-hypertextql-type="integer" class="hypertextql_foreign_key">user_id</th>
+        <th scope="col" @id="posts_title"      data-hypertextql-type="string">title</th>
+        <th scope="col" @id="posts_content"    data-hypertextql-type="text">content</th>
+        <th scope="col" @id="posts_created_at" data-hypertextql-type="datetime">created_at</th>
+        <th scope="col" @id="posts_updated_at" data-hypertextql-type="datetime">updated_at</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr @id="posts_1">
+        <td @id="posts_1_id"><a href="#posts_1">1</a></td>
+        <td @id="posts_1_user_id"><a href="users.html#users_1">1</a></td>
+        <td @id="posts_1_title">Hello</td>
+        <td @id="posts_1_content"><textarea readonly>Hello, world! From HypertextQL.</textarea></td>
+        <td @id="posts_1_created_at"><time datetime="2025-07-19T15:23:37+07:00">Sat July 19 15:23:37 +07:00 2025</time></td>
+        <td @id="posts_1_updated_at"><time datetime="2025-07-19T15:23:37+07:00">Sat July 19 15:23:37 +07:00 2025</time></td>
+      </tr>
+
+      <tr @id="posts_2">
+        <td @id="posts_2_id"><a href="#posts_2">2</a></td>
+        <td @id="posts_2_user_id"><a href="users.html#users_1">1</a></td>
+        <td @id="posts_2_title">First things first, next things next</td>
+        <td @id="posts_2_content"><textarea readonly>Lots more to come for HypertextQL.\n\nFirst, flushing out the spec, written for humans. Then, a human readable test suite.\n\nNext, starting work on the Ruby implementation.\n\nWanna help?</textarea></td>
+        <td @id="posts_2_created_at"><time datetime="2025-07-19T17:57:07+07:00">Sat July 19 17:57:07 +07:00 2025</time></td>
+        <td @id="posts_2_updated_at"><time datetime="2025-07-19T17:57:07+07:00">Sat July 19 17:57:07 +07:00 2025</time></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
