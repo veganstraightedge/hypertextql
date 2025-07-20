@@ -4,7 +4,7 @@ https://github.com/veganstraightedge/hypertextql
 
 ## Description
 
-A database backed by HTML files
+A SQL database backed by HTML files, HypertextQL spec, and reference implementation (Ruby gem)
 
 ## Specification
 
@@ -12,3 +12,12 @@ A database backed by HTML files
 https://github.com/veganstraightedge/hypertextql/blob/main/specification/README.md
 
 _Very work in progress_ (2025-07-19)
+
+
+## Implementations
+
+Aspirational!
+
+- Ruby
+- Javascript
+- ...
