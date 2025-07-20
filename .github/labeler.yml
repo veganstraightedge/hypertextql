@@ -1,0 +1,63 @@
+changelog:
+  - changed-files:
+    - any-glob-to-any-file:
+      - CHANGELOG.md
+
+ci:
+  - changed-files:
+    - any-glob-to-any-file:
+      - .github/workflows/**/*
+
+code_of_conduct:
+  - changed-files:
+    - any-glob-to-any-file:
+      - CODE_OF_CONDUCT.md
+
+dev:
+  - changed-files:
+    - any-glob-to-any-file:
+      - bin/**/*
+
+gem_dependencies:
+  - changed-files:
+    - any-glob-to-any-file:
+      - Gemfile
+      - Gemfile.lock
+      - hypertextql.gemspec
+
+gem_ownership:
+  - changed-files:
+    - any-glob-to-any-file:
+      - CODEOWNERS
+      - sig/**/*
+
+rake:
+  - changed-files:
+    - any-glob-to-any-file:
+      - Rakefile
+
+readme:
+  - changed-files:
+    - any-glob-to-any-file:
+      - README.md
+
+rubocop:
+  - changed-files:
+    - any-glob-to-any-file:
+      - .rubocop.yml
+      - .rubocop_todo.yml
+
+ruby_version:
+  - changed-files:
+    - any-glob-to-any-file:
+      - .ruby-version
+
+specification:
+  - changed-files:
+    - any-glob-to-any-file:
+      - specification/**/*
+
+tests:
+  - changed-files:
+    - any-glob-to-any-file:
+      - spec/**/*

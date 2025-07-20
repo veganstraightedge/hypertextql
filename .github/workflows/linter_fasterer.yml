@@ -1,0 +1,19 @@
+name: Linter— Fasterer
+
+on: [push]
+
+jobs:
+  fasterer_linter:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@master
+        with:
+          bundler-cache: true
+
+      - name: Run Fasterer linter
+        run:  bundle exec fasterer app
