@@ -55,10 +55,11 @@ The `link[rel-prefetch]` tags SHOULD be sorted in lexicographical (alphabetical)
 
 ```html
 <head>
-  <link rel="prefetch" href="[table_1].html" />
-  <link rel="prefetch" href="[table_2].html" />
-  <link rel="prefetch" href="[table_3].html" />
-  ...
+  <link rel="prefetch" href="comments.html">
+  <link rel="prefetch" href="posts.html">
+  <link rel="prefetch" href="taggings.html">
+  <link rel="prefetch" href="tags.html">
+  <link rel="prefetch" href="users.html">
 </head>
 ```
 
