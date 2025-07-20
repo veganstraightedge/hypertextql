@@ -71,9 +71,9 @@ PLATFORMS
 DEPENDENCIES
   fasterer
   hypertextql!
-  rake (~> 13.0)
-  rspec (~> 3.0)
-  rubocop (~> 1.21)
+  rake (~> 13.3)
+  rspec (~> 3.13)
+  rubocop (~> 1.78)
   rubocop-rake
   rubocop-rspec
 
