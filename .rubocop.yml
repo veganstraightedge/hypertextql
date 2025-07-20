@@ -2,6 +2,9 @@ plugins:
   - rubocop-rake
   - rubocop-rspec
 
+AllCops:
+  NewCops: enable
+
 # Allow emoji in comments
 Style/AsciiComments:
   Enabled: false
