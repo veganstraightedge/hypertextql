@@ -56,7 +56,7 @@ A database table's name MUST be stored in the `table` tag's `id` attribute.
 A database table's `table` tag `id` attribute value MUST be the same as the filename, without the file extension.
 
 ```html
-<table class="hypertextql-table" @id="users">
+<table class="hypertextql-table" id="users">
 </table>
 ```
 
@@ -85,7 +85,7 @@ If present, a database table's optional description MUST be stored in the `table
 If included, the `caption` tag must be the first child of its parent `table` tag.
 
 ```html
-<table class="hypertextql-table" @id="users">
+<table class="hypertextql-table" id="users">
   <caption>All of our users: authors, editors, publishers, admins...</caption>
 </table>
 ```
@@ -125,7 +125,7 @@ A database table HTML file MUST contain only one HTML `table` with the `class` a
 A database table's schema MUST be defined in the `table` tag `thead` tag.
 
 ```html
-<table class="hypertextql-table" @id="users">
+<table class="hypertextql-table" id="users">
   <caption>All of our users: authors, editors, publishers, admins...</caption>
 
   <thead>
@@ -140,7 +140,7 @@ The database table schema `tr` row MUST be wrapped in `thead` tag.
 A database table's `table` tag MUST have only one schema `tr` row.
 
 ```html
-<table class="hypertextql-table" @id="users">
+<table class="hypertextql-table" id="users">
   <caption>All of our users: authors, editors, publishers, admins...</caption>
 
   <thead>
@@ -155,7 +155,7 @@ A database table's `table` tag MUST have only one schema `tr` row.
 Each database table schema column MUST be in a `th` tag.
 
 ```html
-<table class="hypertextql-table" @id="users">
+<table class="hypertextql-table" id="users">
   <caption>All of our users: authors, editors, publishers, admins...</caption>
 
   <thead>
@@ -171,7 +171,7 @@ Each database table schema column MUST be in a `th` tag.
 All database table schema columns MUST have a `scope` attribute with `value` of `col`.
 
 ```html
-<table class="hypertextql-table" @id="users">
+<table class="hypertextql-table" id="users">
   <caption>All of our users: authors, editors, publishers, admins...</caption>
 
   <thead>
@@ -188,7 +188,7 @@ All database table schema columns MUST have a name.
 A database table schema column's name MUST be stored in the `th` tag's content.
 
 ```html
-<table class="hypertextql-table" @id="users">
+<table class="hypertextql-table" id="users">
   <caption>All of our users: authors, editors, publishers, admins...</caption>
 
   <thead>
@@ -213,18 +213,18 @@ A database table schema column slug MUST be a composite of the _database table n
 For example, `users_id`, `users_email`, etc.
 
 ```html
-<table class="hypertextql-table" @id="users">
+<table class="hypertextql-table" id="users">
   <caption>All of our users: authors, editors, publishers, admins...</caption>
 
   <thead>
     <tr>
-      <th scope="col" @id="users_id">id</th>
-      <th scope="col" @id="users_email">email</th>
-      <th scope="col" @id="users_name">name</th>
-      <th scope="col" @id="users_username">username</th>
-      <th scope="col" @id="users_bio">bio</th>
-      <th scope="col" @id="users_created_at">created_at</th>
-      <th scope="col" @id="users_updated_at">updated_at</th>
+      <th scope="col" id="users_id">id</th>
+      <th scope="col" id="users_email">email</th>
+      <th scope="col" id="users_name">name</th>
+      <th scope="col" id="users_username">username</th>
+      <th scope="col" id="users_bio">bio</th>
+      <th scope="col" id="users_created_at">created_at</th>
+      <th scope="col" id="users_updated_at">updated_at</th>
     </tr>
   </thead>
 </table>
@@ -236,18 +236,18 @@ All database table schema columns MUST have a type.
 A database table schema column datatype MUST be stored in the `th` tag's `data-hypertextql-type` data attribute.
 
 ```html
-<table class="hypertextql_table" @id="users">
+<table class="hypertextql_table" id="users">
   <caption>All of our users: authors, editors, publishers, admins...</caption>
 
   <thead>
     <tr>
-      <th scope="col" @id="users_id"         data-hypertextql-type="integer">id</th>
-      <th scope="col" @id="users_email"      data-hypertextql-type="string">email</th>
-      <th scope="col" @id="users_name"       data-hypertextql-type="string">name</th>
-      <th scope="col" @id="users_username"   data-hypertextql-type="string">username</th>
-      <th scope="col" @id="users_bio"        data-hypertextql-type="text">bio</th>
-      <th scope="col" @id="users_created_at" data-hypertextql-type="datetime">created_at</th>
-      <th scope="col" @id="users_updated_at" data-hypertextql-type="datetime">updated_at</th>
+      <th scope="col" id="users_id"         data-hypertextql-type="integer">id</th>
+      <th scope="col" id="users_email"      data-hypertextql-type="string">email</th>
+      <th scope="col" id="users_name"       data-hypertextql-type="string">name</th>
+      <th scope="col" id="users_username"   data-hypertextql-type="string">username</th>
+      <th scope="col" id="users_bio"        data-hypertextql-type="text">bio</th>
+      <th scope="col" id="users_created_at" data-hypertextql-type="datetime">created_at</th>
+      <th scope="col" id="users_updated_at" data-hypertextql-type="datetime">updated_at</th>
     </tr>
   </thead>
 </table>
@@ -259,18 +259,18 @@ A database table schema MUST specify one database table schema column as the _pr
 A _primary key_ MUST be defined on a database table schema column `th` tag in the `class` attribute with a value of `hypertextql_primary_key`.
 
 ```html
-<table class="hypertextql_table" @id="users">
+<table class="hypertextql_table" id="users">
   <caption>All of our users: authors, editors, publishers, admins...</caption>
 
   <thead>
     <tr>
-      <th scope="col" @id="users_id"         data-hypertextql-type="integer" class="hypertextql_primary_key">id</th>
-      <th scope="col" @id="users_email"      data-hypertextql-type="string">email</th>
-      <th scope="col" @id="users_name"       data-hypertextql-type="string">name</th>
-      <th scope="col" @id="users_username"   data-hypertextql-type="string">username</th>
-      <th scope="col" @id="users_bio"        data-hypertextql-type="text">bio</th>
-      <th scope="col" @id="users_created_at" data-hypertextql-type="datetime">created_at</th>
-      <th scope="col" @id="users_updated_at" data-hypertextql-type="datetime">updated_at</th>
+      <th scope="col" id="users_id"         data-hypertextql-type="integer" class="hypertextql_primary_key">id</th>
+      <th scope="col" id="users_email"      data-hypertextql-type="string">email</th>
+      <th scope="col" id="users_name"       data-hypertextql-type="string">name</th>
+      <th scope="col" id="users_username"   data-hypertextql-type="string">username</th>
+      <th scope="col" id="users_bio"        data-hypertextql-type="text">bio</th>
+      <th scope="col" id="users_created_at" data-hypertextql-type="datetime">created_at</th>
+      <th scope="col" id="users_updated_at" data-hypertextql-type="datetime">updated_at</th>
     </tr>
   </thead>
 </table>
@@ -290,18 +290,18 @@ The content of a database table is what is in each record, not the schema of the
 The content of a database table MUST be inside of the `tbody` tag inside of the `table` tag.
 
 ```html
-<table class="hypertextql_table" @id="users">
+<table class="hypertextql_table" id="users">
   <caption>All of our users: authors, editors, publishers, admins...</caption>
 
   <thead>
     <tr>
-      <th scope="col" @id="users_id"         data-hypertextql-type="integer" class="hypertextql_primary_key">id</th>
-      <th scope="col" @id="users_email"      data-hypertextql-type="string">email</th>
-      <th scope="col" @id="users_name"       data-hypertextql-type="string">name</th>
-      <th scope="col" @id="users_username"   data-hypertextql-type="string">username</th>
-      <th scope="col" @id="users_bio"        data-hypertextql-type="text">bio</th>
-      <th scope="col" @id="users_created_at" data-hypertextql-type="datetime">created_at</th>
-      <th scope="col" @id="users_updated_at" data-hypertextql-type="datetime">updated_at</th>
+      <th scope="col" id="users_id"         data-hypertextql-type="integer" class="hypertextql_primary_key">id</th>
+      <th scope="col" id="users_email"      data-hypertextql-type="string">email</th>
+      <th scope="col" id="users_name"       data-hypertextql-type="string">name</th>
+      <th scope="col" id="users_username"   data-hypertextql-type="string">username</th>
+      <th scope="col" id="users_bio"        data-hypertextql-type="text">bio</th>
+      <th scope="col" id="users_created_at" data-hypertextql-type="datetime">created_at</th>
+      <th scope="col" id="users_updated_at" data-hypertextql-type="datetime">updated_at</th>
     </tr>
   </thead>
 
@@ -316,18 +316,18 @@ The content of a database table MUST be inside of the `tbody` tag inside of the 
 Each database table content row MUST be inside of a `tr` tag inside of the `tbody` tag.
 
 ```html
-<table class="hypertextql_table" @id="users">
+<table class="hypertextql_table" id="users">
   <caption>All of our users: authors, editors, publishers, admins...</caption>
 
   <thead>
     <tr>
-      <th scope="col" @id="users_id"         data-hypertextql-type="integer" class="hypertextql_primary_key">id</th>
-      <th scope="col" @id="users_email"      data-hypertextql-type="string">email</th>
-      <th scope="col" @id="users_name"       data-hypertextql-type="string">name</th>
-      <th scope="col" @id="users_username"   data-hypertextql-type="string">username</th>
-      <th scope="col" @id="users_bio"        data-hypertextql-type="text">bio</th>
-      <th scope="col" @id="users_created_at" data-hypertextql-type="datetime">created_at</th>
-      <th scope="col" @id="users_updated_at" data-hypertextql-type="datetime">updated_at</th>
+      <th scope="col" id="users_id"         data-hypertextql-type="integer" class="hypertextql_primary_key">id</th>
+      <th scope="col" id="users_email"      data-hypertextql-type="string">email</th>
+      <th scope="col" id="users_name"       data-hypertextql-type="string">name</th>
+      <th scope="col" id="users_username"   data-hypertextql-type="string">username</th>
+      <th scope="col" id="users_bio"        data-hypertextql-type="text">bio</th>
+      <th scope="col" id="users_created_at" data-hypertextql-type="datetime">created_at</th>
+      <th scope="col" id="users_updated_at" data-hypertextql-type="datetime">updated_at</th>
     </tr>
   </thead>
 
@@ -347,27 +347,27 @@ A database table content row slug MUST be a composite of the _database table nam
 For example, `users_1`, `users_2`, etc.
 
 ```html
-<table class="hypertextql_table" @id="users">
+<table class="hypertextql_table" id="users">
   <caption>All of our users: authors, editors, publishers, admins...</caption>
 
   <thead>
     <tr>
-      <th scope="col" @id="users_id"         data-hypertextql-type="integer" class="hypertextql_primary_key">id</th>
-      <th scope="col" @id="users_email"      data-hypertextql-type="string">email</th>
-      <th scope="col" @id="users_name"       data-hypertextql-type="string">name</th>
-      <th scope="col" @id="users_username"   data-hypertextql-type="string">username</th>
-      <th scope="col" @id="users_bio"        data-hypertextql-type="text">bio</th>
-      <th scope="col" @id="users_created_at" data-hypertextql-type="datetime">created_at</th>
-      <th scope="col" @id="users_updated_at" data-hypertextql-type="datetime">updated_at</th>
+      <th scope="col" id="users_id"         data-hypertextql-type="integer" class="hypertextql_primary_key">id</th>
+      <th scope="col" id="users_email"      data-hypertextql-type="string">email</th>
+      <th scope="col" id="users_name"       data-hypertextql-type="string">name</th>
+      <th scope="col" id="users_username"   data-hypertextql-type="string">username</th>
+      <th scope="col" id="users_bio"        data-hypertextql-type="text">bio</th>
+      <th scope="col" id="users_created_at" data-hypertextql-type="datetime">created_at</th>
+      <th scope="col" id="users_updated_at" data-hypertextql-type="datetime">updated_at</th>
     </tr>
   </thead>
 
   <tbody>
-    <tr @id="users_1">
+    <tr id="users_1">
       ...
     </tr>
 
-    <tr @id="users_2">
+    <tr id="users_2">
       ...
     </tr>
   </tbody>
@@ -379,27 +379,27 @@ For example, `users_1`, `users_2`, etc.
 Each database table content row column MUST be in a `td` tag.
 
 ```html
-<table class="hypertextql_table" @id="users">
+<table class="hypertextql_table" id="users">
   <caption>All of our users: authors, editors, publishers, admins...</caption>
 
   <thead>
     <tr>
-      <th scope="col" @id="users_id"         data-hypertextql-type="integer" class="hypertextql_primary_key">id</th>
-      <th scope="col" @id="users_email"      data-hypertextql-type="string">email</th>
-      <th scope="col" @id="users_name"       data-hypertextql-type="string">name</th>
-      <th scope="col" @id="users_username"   data-hypertextql-type="string">username</th>
-      <th scope="col" @id="users_bio"        data-hypertextql-type="text">bio</th>
-      <th scope="col" @id="users_created_at" data-hypertextql-type="datetime">created_at</th>
-      <th scope="col" @id="users_updated_at" data-hypertextql-type="datetime">updated_at</th>
+      <th scope="col" id="users_id"         data-hypertextql-type="integer" class="hypertextql_primary_key">id</th>
+      <th scope="col" id="users_email"      data-hypertextql-type="string">email</th>
+      <th scope="col" id="users_name"       data-hypertextql-type="string">name</th>
+      <th scope="col" id="users_username"   data-hypertextql-type="string">username</th>
+      <th scope="col" id="users_bio"        data-hypertextql-type="text">bio</th>
+      <th scope="col" id="users_created_at" data-hypertextql-type="datetime">created_at</th>
+      <th scope="col" id="users_updated_at" data-hypertextql-type="datetime">updated_at</th>
     </tr>
   </thead>
 
   <tbody>
-    <tr @id="users_1">
+    <tr id="users_1">
       <td>...</td>
     </tr>
 
-    <tr @id="users_2">
+    <tr id="users_2">
       <td>...</td>
     </tr>
   </tbody>
@@ -409,23 +409,23 @@ Each database table content row column MUST be in a `td` tag.
 Each database table content row column MUST contain the same number of `td` tags as `th` tags in the schema row `tr` in `thead`.
 
 ```html
-<table class="hypertextql_table" @id="users">
+<table class="hypertextql_table" id="users">
   <caption>All of our users: authors, editors, publishers, admins...</caption>
 
   <thead>
     <tr>
-      <th scope="col" @id="users_id"         data-hypertextql-type="integer" class="hypertextql_primary_key">id</th>
-      <th scope="col" @id="users_email"      data-hypertextql-type="string">email</th>
-      <th scope="col" @id="users_name"       data-hypertextql-type="string">name</th>
-      <th scope="col" @id="users_username"   data-hypertextql-type="string">username</th>
-      <th scope="col" @id="users_bio"        data-hypertextql-type="text">bio</th>
-      <th scope="col" @id="users_created_at" data-hypertextql-type="datetime">created_at</th>
-      <th scope="col" @id="users_updated_at" data-hypertextql-type="datetime">updated_at</th>
+      <th scope="col" id="users_id"         data-hypertextql-type="integer" class="hypertextql_primary_key">id</th>
+      <th scope="col" id="users_email"      data-hypertextql-type="string">email</th>
+      <th scope="col" id="users_name"       data-hypertextql-type="string">name</th>
+      <th scope="col" id="users_username"   data-hypertextql-type="string">username</th>
+      <th scope="col" id="users_bio"        data-hypertextql-type="text">bio</th>
+      <th scope="col" id="users_created_at" data-hypertextql-type="datetime">created_at</th>
+      <th scope="col" id="users_updated_at" data-hypertextql-type="datetime">updated_at</th>
     </tr>
   </thead>
 
   <tbody>
-    <tr @id="users_1">
+    <tr id="users_1">
       <td>...</td>
       <td>...</td>
       <td>...</td>
@@ -435,7 +435,7 @@ Each database table content row column MUST contain the same number of `td` tags
       <td>...</td>
     </tr>
 
-    <tr @id="users_2">
+    <tr id="users_2">
       <td>...</td>
       <td>...</td>
       <td>...</td>
@@ -457,24 +457,24 @@ For example, `users_1_id`, `users_2_email`, etc.
 
 ```html
 <tbody>
-  <tr @id="users_1">
-    <td @id="users_1_id">...</td>
-    <td @id="users_1_email">...</td>
-    <td @id="users_1_name">...</td>
-    <td @id="users_1_username">...</td>
-    <td @id="users_1_bio">...</td>
-    <td @id="users_1_created_at">...</td>
-    <td @id="users_1_updated_at">...</td>
+  <tr id="users_1">
+    <td id="users_1_id">...</td>
+    <td id="users_1_email">...</td>
+    <td id="users_1_name">...</td>
+    <td id="users_1_username">...</td>
+    <td id="users_1_bio">...</td>
+    <td id="users_1_created_at">...</td>
+    <td id="users_1_updated_at">...</td>
   </tr>
 
-  <tr @id="users_2">
-    <td @id="users_2_id">...</td>
-    <td @id="users_2_email">...</td>
-    <td @id="users_2_name">...</td>
-    <td @id="users_2_username">...</td>
-    <td @id="users_2_bio">...</td>
-    <td @id="users_2_created_at">...</td>
-    <td @id="users_2_updated_at">...</td>
+  <tr id="users_2">
+    <td id="users_2_id">...</td>
+    <td id="users_2_email">...</td>
+    <td id="users_2_name">...</td>
+    <td id="users_2_username">...</td>
+    <td id="users_2_bio">...</td>
+    <td id="users_2_created_at">...</td>
+    <td id="users_2_updated_at">...</td>
   </tr>
 </tbody>
 ```
@@ -485,24 +485,24 @@ Each database table content row column MUST content be inside of the `td` tag.
 
 ```html
 <tbody>
-  <tr @id="users_1">
-    <td @id="users_1_id">1</td>
-    <td @id="users_1_email">veganstraightedge@gmail.com</td>
-    <td @id="users_1_name">Shane Becker</td>
-    <td @id="users_1_username">@veganstraightedge</td>
-    <td @id="users_1_bio"><textarea readonly>Midwest grown. Rubyist. Creator of HypertextQL.</textarea></td>
-    <td @id="users_1_created_at"><time datetime="2013-05-29T15:48:47+07:00">Wed May 29 15:48:47 +0700 2013</time></td>
-    <td @id="users_1_updated_at"><time datetime="2013-05-29T16:23:19+07:00">Wed May 29 16:23:19 +0700 2013</time></td>
+  <tr id="users_1">
+    <td id="users_1_id">1</td>
+    <td id="users_1_email">veganstraightedge@gmail.com</td>
+    <td id="users_1_name">Shane Becker</td>
+    <td id="users_1_username">@veganstraightedge</td>
+    <td id="users_1_bio"><textarea readonly>Midwest grown. Rubyist. Creator of HypertextQL.</textarea></td>
+    <td id="users_1_created_at"><time datetime="2013-05-29T15:48:47+07:00">Wed May 29 15:48:47 +0700 2013</time></td>
+    <td id="users_1_updated_at"><time datetime="2013-05-29T16:23:19+07:00">Wed May 29 16:23:19 +0700 2013</time></td>
   </tr>
 
-  <tr @id="users_2">
-    <td @id="users_2_id">2</td>
-    <td @id="users_2_email">bob@example.com</td>
-    <td @id="users_2_name">Bob Sackamano</td>
-    <td @id="users_2_username">@bobsackamano</td>
-    <td @id="users_2_bio"><textarea readonly>A harebrained character on Seinfeld, never seen on screen, only mentioned by Kramer.</textarea></td>
-    <td @id="users_2_created_at"><time datetime="2023-11-14T16:37:18+07:00">Tue Nov 16 15:37:18 +0700 2013</time></td>
-    <td @id="users_2_updated_at"><time datetime="2023-11-14T16:42:56+07:00">Tue Nov 16 15:42:56 +0700 2013</time></td>
+  <tr id="users_2">
+    <td id="users_2_id">2</td>
+    <td id="users_2_email">bob@example.com</td>
+    <td id="users_2_name">Bob Sackamano</td>
+    <td id="users_2_username">@bobsackamano</td>
+    <td id="users_2_bio"><textarea readonly>A harebrained character on Seinfeld, never seen on screen, only mentioned by Kramer.</textarea></td>
+    <td id="users_2_created_at"><time datetime="2023-11-14T16:37:18+07:00">Tue Nov 16 15:37:18 +0700 2013</time></td>
+    <td id="users_2_updated_at"><time datetime="2023-11-14T16:42:56+07:00">Tue Nov 16 15:42:56 +0700 2013</time></td>
   </tr>
 </tbody>
 ```
@@ -513,24 +513,24 @@ Each database table content row primary key MUST contain a section link `a` to c
 
 ```html
 <tbody>
-  <tr @id="users_1">
-    <td @id="users_1_id"><a href="#users_1">1</a></td>
-    <td @id="users_1_email">veganstraightedge@gmail.com</td>
-    <td @id="users_1_name">Shane Becker</td>
-    <td @id="users_1_username">@veganstraightedge</td>
-    <td @id="users_1_bio"><textarea readonly>Midwest grown. Rubyist. Creator of HypertextQL.</textarea></td>
-    <td @id="users_1_created_at"><time datetime="2013-05-29T15:48:47+07:00">Wed May 29 15:48:47 +0700 2013</time></td>
-    <td @id="users_1_updated_at"><time datetime="2013-05-29T16:23:19+07:00">Wed May 29 16:23:19 +0700 2013</time></td>
+  <tr id="users_1">
+    <td id="users_1_id"><a href="#users_1">1</a></td>
+    <td id="users_1_email">veganstraightedge@gmail.com</td>
+    <td id="users_1_name">Shane Becker</td>
+    <td id="users_1_username">@veganstraightedge</td>
+    <td id="users_1_bio"><textarea readonly>Midwest grown. Rubyist. Creator of HypertextQL.</textarea></td>
+    <td id="users_1_created_at"><time datetime="2013-05-29T15:48:47+07:00">Wed May 29 15:48:47 +0700 2013</time></td>
+    <td id="users_1_updated_at"><time datetime="2013-05-29T16:23:19+07:00">Wed May 29 16:23:19 +0700 2013</time></td>
   </tr>
 
-  <tr @id="users_2">
-    <td @id="users_2_id"><a href="#users_2">1</a></td>
-    <td @id="users_2_email">bob@example.com</td>
-    <td @id="users_2_name">Bob Sackamano</td>
-    <td @id="users_2_username">@bobsackamano</td>
-    <td @id="users_2_bio"><textarea readonly>A harebrained character on Seinfeld, never seen on screen, only mentioned by Kramer.</textarea></td>
-    <td @id="users_2_created_at"><time datetime="2023-11-14T16:37:18+07:00">Tue Nov 16 15:37:18 +0700 2013</time></td>
-    <td @id="users_2_updated_at"><time datetime="2023-11-14T16:42:56+07:00">Tue Nov 16 15:42:56 +0700 2013</time></td>
+  <tr id="users_2">
+    <td id="users_2_id"><a href="#users_2">1</a></td>
+    <td id="users_2_email">bob@example.com</td>
+    <td id="users_2_name">Bob Sackamano</td>
+    <td id="users_2_username">@bobsackamano</td>
+    <td id="users_2_bio"><textarea readonly>A harebrained character on Seinfeld, never seen on screen, only mentioned by Kramer.</textarea></td>
+    <td id="users_2_created_at"><time datetime="2023-11-14T16:37:18+07:00">Tue Nov 16 15:37:18 +0700 2013</time></td>
+    <td id="users_2_updated_at"><time datetime="2023-11-14T16:42:56+07:00">Tue Nov 16 15:42:56 +0700 2013</time></td>
   </tr>
 </tbody>
 ```
