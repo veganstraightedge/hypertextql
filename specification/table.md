@@ -548,3 +548,7 @@ TKTK how to store and display each datatype of content
 TKTK Link from foreign key to table page and table row
 TKTK [rel=canonical]
 TKTK https://microformats.org/wiki/rel-canonical
+
+# TKTK: how to define NULLable/required
+
+# TKTK: how to define default values
